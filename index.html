@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Miguel Ángel Vargas | Portfolio</title>
+  <meta name="description" content="Portfolio de Miguel Ángel Vargas (2º DAM). Python, JS, MySQL." />
+  
+  <script>
+  document.documentElement.classList.add("js");
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">
+          <strong>Miguel</strong><br>Ángel
+        </span>
+      </a>
+
+      <nav class="nav-links" id="menu">
+        <a class="pill active" href="#inicio">Home</a>
+        <a class="pill" href="#about">Sobre mi</a>
+        <a class="pill" href="#servicios">Servicios</a>
+        <a class="pill" href="#proyectos">Portfolio</a>
+        <a class="pill" href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="pill primary" href="assets/cv/CV Miguel Angel Vargas.pdf">⬇ Descargar CV</a>
+        <button class="pill" id="themeToggle" type="button" aria-pressed="false" title="Cambiar tema">
+  	🌙 Tema
+	</button>
+
+        <button class="hamburger pill" id="hamburger" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="inicio" class="hero">
+  <div class="hero-bg-light" aria-hidden="true"></div>
+  <div class="hero-scan-light" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <!-- marca de agua -->
+      <div class="watermark" aria-hidden="true">M</div>
+
+      <section class="hero-left reveal">
+        <p class="eyebrow">HOLA, SOY</p>
+        <h1 class="hero-title">
+          Miguel Ángel <span class="accent">Vargas</span>
+        </h1>
+
+        <p class="hero-sub">
+          Desarrollador <span class="accent-soft">(DAM)</span> · Web & Backend
+        </p>
+
+        <div class="hero-contact">
+          <a class="hero-link" href="mailto:miguelangelvargas39@gmail.com">miguelangelvargas39@gmail.com</a>
+          <span class="dot">•</span>
+          <span class="muted">Valencia, ES</span>
+        </div>
+
+        <p class="hero-desc">
+          Estudiante de 2º de DAM. Construyo proyectos con foco en fundamentos, claridad de código
+          y buenas prácticas.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="pill primary" href="#proyectos">🚀 Ver Proyectos</a>
+          <a class="pill" href="#about">👤 Sobre mí</a>
+          <a class="pill" href="#contacto">📬 Contacto</a>
+        </div>
+
+        <div class="social-row">
+          <a class="icon-btn" href="https://github.com/miguelvarro" target="_blank" rel="noreferrer" aria-label="GitHub">⌂</a>
+          <a class="icon-btn" href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a class="icon-btn" href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="X">𝕏</a>
+        </div>
+      </section>
+
+      <aside class="hero-right reveal">
+        <div class="portrait">
+          <img src="assets/img/avatar.jpg" alt="Foto de Miguel Ángel Vargas" />
+        </div>
+
+      </aside>
+    </div>
+  </main>
+  
+  <section id="about" class="section">
+    <div class="section-inner reveal">
+      <div class="section-head reveal">
+        <span class="section-kicker">QUIEN SOY</span>
+        <h2 class="section-title">Sobre mi</h2>
+        <p class="section-desc">
+          Perfil junior orientado a aprender rápido y entregar trabajo limpio. Interesado en backend, BBDD, IA y web.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="info-row">
+            <span class="label">Edad</span><span class="value">28</span>
+          </div>
+          <div class="info-row">
+            <span class="label">Residencia</span><span class="value">Valencia (ES)</span>
+          </div>
+          <div class="info-row">
+            <span class="label">Email</span><a class="value link" href="mailto:miguelangelvargas39@gmail.com">miguelangelvargas39@gmail.com</a>
+          </div>
+          <div class="info-row">
+            <span class="label">Idiomas</span><span class="value">ES/VA nativo · EN avanzado · NO básico</span>
+          </div>
+          <div class="info-row">
+            <span class="label">Estado</span><span class="value">Buscando prácticas</span>
+          </div>
+        </div>
+
+        <div class="about-media">
+          <div class="media-frame">
+            <img src="assets/img/about.jpg" alt="Imagen sobre mí" loading="lazy" />
+          </div>
+          <div class="media-note">
+            <strong>Enfoque actual:</strong> consolidar bases + portfolio con proyectos reales (CRUDs, web responsive, MySQL).
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-cards">
+        <article class="skill">
+          <div class="skill-top">
+            <strong>Backend</strong>
+            <span class="skill-num">60%</span>
+          </div>
+          <div class="bar"><span style="width:60%"></span></div>
+          <p class="muted small">Python, lógica, APIs simples, buenas prácticas.</p>
+        </article>
+
+        <article class="skill">
+          <div class="skill-top">
+            <strong>Frontend</strong>
+            <span class="skill-num">55%</span>
+          </div>
+          <div class="bar"><span style="width:55%"></span></div>
+          <p class="muted small">HTML/CSS/JS, responsive y UI limpia.</p>
+        </article>
+
+        <article class="skill">
+          <div class="skill-top">
+            <strong>Bases de datos</strong>
+            <span class="skill-num">65%</span>
+          </div>
+          <div class="bar"><span style="width:65%"></span></div>
+          <p class="muted small">MySQL, consultas, modelado básico.</p>
+        </article>
+
+        <article class="skill">
+          <div class="skill-top">
+            <strong>Trabajo en equipo</strong>
+            <span class="skill-num">70%</span>
+          </div>
+          <div class="bar"><span style="width:70%"></span></div>
+          <p class="muted small">Comunicación clara, orden y consistencia.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section section-soft">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-kicker">QUE HAGO</span>
+        <h2 class="section-title">Servicios</h2>
+      </div>
+
+      <div class="grid-3">
+        <article class="mini reveal">
+          <h3>Web simple</h3>
+          <p class="muted">Landings, layouts responsive y UI limpia.</p>
+        </article>
+        <article class="mini reveal">
+          <h3>CRUD + MySQL</h3>
+          <p class="muted">Apps pequeñas con operaciones básicas y persistencia.</p>
+        </article>
+        <article class="mini reveal">
+          <h3>Refactor y orden</h3>
+          <p class="muted">Mejorar estructura, nombres, y claridad del código.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="section">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-kicker">WORK</span>
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-text">
+            <h3>CRUD Python + MySQL</h3>
+            <p class="muted">Gestión de registros con operaciones CRUD y conexión a base de datos.</p>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">MySQL</span>
+            </div>
+            <div class="project-actions">
+              <a class="pill" href="#" target="_blank" rel="noreferrer">💻 Código</a>
+              <a class="pill primary" href="#" target="_blank" rel="noreferrer">🔗 Demo</a>
+            </div>
+          </div>
+
+          <div class="project-media">
+            <img src="assets/img/project1.jpg" alt="Captura del proyecto 1" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-text">
+            <h3>Web Responsive</h3>
+            <p class="muted">Landing con secciones, navegación y tarjetas.</p>
+            <div class="chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JS</span>
+            </div>
+            <div class="project-actions">
+              <a class="pill" href="#" target="_blank" rel="noreferrer">💻 Código</a>
+              <a class="pill primary" href="#" target="_blank" rel="noreferrer">🔗 Demo</a>
+            </div>
+          </div>
+
+          <div class="project-media">
+            <img src="assets/img/project2.jpg" alt="Captura del proyecto 2" loading="lazy" />
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section section-soft">
+    <div class="section-inner">
+      <div class="section-head reveal">
+        <span class="section-kicker">HABLEMOS</span>
+        <h2 class="section-title">Contacto</h2>
+      </div>
+
+      <div class="contact reveal">
+        <div class="contact-box">
+          <p><strong>Email:</strong> <a class="link" href="mailto:miguelangelvargas39@gmail.com">miguelangelvargas39@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a class="link" href="https://github.com/miguelvarro" target="_blank" rel="noreferrer">https://github.com/miguelvarro</a></p>
+          <p><strong>Ubicación:</strong> Valencia</p>
+        </div>
+      </div>
+
+      <p class="footer muted">© <span id="year"></span> Miguel Ángel Vargas</p>
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
